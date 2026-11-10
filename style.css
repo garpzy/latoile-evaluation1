@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+
+:root{
+    --main-color: #d8935c;
+    --secondary-color: #6B3E2E;
+    --text-color: #2E2A26;
+    --background-color: #F8F1E8;
+    --alt-background-color: #EAD8C3;
+    --font-title: "Playfair+Display";
+
+}
+
+body{
+    background-color: var(--background-color);
+    font-family: "Montserrat";
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    width: 100%;
+}
+
+h1{
+    font-family: var(--font-title);
+}
+
+a, li {
+    text-decoration: none;
+    list-style: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    padding: 1rem 2rem;
+}
+
+#logo{
+    height: 50px;
+}
+
+nav ul{
+    display: flex;
+    gap: 1rem;
+}
+
+.button{
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.button-dark{
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+
+.button-light{
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.section-container{
+    display: flex;
+    width: 70vw;
+}
+
+#hero{
+    display: flex;
+    height: 50vh;
+}
+
+.hero-title, .hero-img{
+    width: 50%;
+}
+
+.hero-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--alt-background-color);
+}
+
+#hero-buttons{
+    display: flex;
+    gap: 1rem;
+}
+
+#hero img{
+    object-fit: cover;
+    height: stretch;
+}

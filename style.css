@@ -13,6 +13,10 @@
 
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     background-color: var(--background-color);
     font-family: "Montserrat";
@@ -26,6 +30,12 @@ img{
 
 h1{
     font-family: var(--font-title);
+    font-size: 3rem;
+}
+
+h2{
+    font-family: var(--font-title);
+    font-size: 2.2rem;
 }
 
 a, li {
@@ -65,14 +75,34 @@ nav ul{
     color: var(--secondary-color);
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .section-container{
     display: flex;
-    width: 70vw;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    padding: 2rem;
+    height: 80vh;
+}
+
+.content-container{
+    display: flex;
+}
+
+.section-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #hero{
     display: flex;
-    height: 50vh;
+    height: 65vh;
 }
 
 .hero-title, .hero-img{
@@ -83,7 +113,8 @@ nav ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
+    padding-left: 10vw;
     background-color: var(--alt-background-color);
 }
 
@@ -95,4 +126,13 @@ nav ul{
 #hero img{
     object-fit: cover;
     height: stretch;
+}
+
+.promesse-img, .promesse-content{
+    width: 50%;
+}
+
+#promesse img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
